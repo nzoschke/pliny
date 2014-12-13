@@ -144,6 +144,14 @@ $ bundle install
 $ rake
 ```
 
+Run tests in a Docker environment. This bypasses needing a local Ruby environment and Postgres daemon.
+
+```
+$ boot2docker up
+$ $(boot2docker shellinit)
+$ fig run test
+```
+
 ## Meta
 
 Created by Brandur Leach and Pedro Belo.
